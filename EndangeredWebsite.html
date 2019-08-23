@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="final.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Gloria+Hallelujah|Livvic|Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Cutive+Mono|Josefin+Slab&display=swap');
+
+
+h3{
+  color: black;
+  font-size: 80px;
+  font-family: 'Amatic SC';
+  margin-left: 50px;
+  margin-right: 50px;
+  padding:0px;
+}
+h4{
+  color: black;
+  font-size: 40px;
+  font-family: 'Amatic SC';
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h5{
+  color: black;
+  font-size: 25px;
+  font-family: 'Livvic';
+  margin-left: 50px;
+  margin-right: 50px;}
+
+p{
+  color: teal;
+  font-size: 35px;
+  font-family: 'Livvic', sans-serif;
+
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p4{
+  color: white;
+  font-size: 28px;
+  font-family: 'Amatic SC';
+
+}
+p2{
+  color: teal;
+  font-size: 30px;
+  font-family: 'Livvic', sans-serif;
+}
+
+p3{
+  color: white;
+  font-size: 23px;
+  font-family: 'Amatic SC'
+}
+
+h2{
+  color: black;
+  font-size: 40px;
+  font-family: 'Amatic SC';
+margin-left: 50px;
+}
+
+p1{
+  color: teal;
+  font-size: 40px;
+  font-family: 'Fredoka One';
+  margin-left: 50px;
+  margin-right: 50px;}
+
+  h11{
+  color: violet;
+  font-size: 40px;
+  font-family: 'Josefin Slab';
+}
+
+h12{
+  color: pink;
+  font-size: 40px;
+  font-family: 'Josefin Slab';
+}
+
+h13{
+  color: slateblue;
+  font-size: 40px;
+  font-family: 'Josefin Slab';
+}
+
+h14{
+  color: tomato;
+  font-size: 40px;
+  font-family: 'Josefin Slab';
+}
+
+
+
+p1{
+  color: purple;
+  font-size: 28 px;
+  font-family: 'Amatic SC'
+}
+
+div1 {
+  border: 3px black;
+  padding: 25px 50px 75px 100px;
+  background-color: violet;
+}
+
+div2 {
+  border: 3px solid black;
+  padding: 50px 75px 100px 125px;
+  background-color: pink;
+}
+
+div3 {
+  border: 3px solid black;
+  padding: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+
+div4 {
+  border: 3px solid black;
+  padding: 25px 50px 75px 100px;
+  background-color: lightblue;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  align-content: center;
+}
+
+p19{
+
+
+}
+
+p9{
+  color: black;
+  font-size: 25px;
+  font-family: 'Amatic SC';
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+
+
+}
+
+
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 3px solid #f1f1f1;
+  perspective: 1000px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+
+}
+
+
+
+.flip-box {
+  background-color: transparent;
+  width: 400px;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+
+.flip-box-back {
+  background-color: #555;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-left: 450px;
+  margin-right: 450px;
+  padding:1000;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+p14{
+  font-family: Amatic SC, Helvetica, sans-serif;
+  align-content: center;
+}
+</style>
+</head>
+<body>
+  <script src="final.js"></script>
+  <p> <img src="image1.jpg" alt="logo" width="1100px" height="170px" style="vertical-align:bottom" > </p>
+    <h1> Endangered Animals in New Jersey </h1>
+
+<button class="tablink" onclick="openPage('Home', this, '#AAEFDF')" id="defaultOpen"><strong>Home</strong></button>
+<button class="tablink" onclick="openPage('Animals', this, '#AAEFDF')" ><strong>Animals</strong></button>
+<button class="tablink" onclick="openPage('Why', this, '#AAEFDF')"><strong>Why Are They Endangered?</strong></button>
+<button class="tablink" onclick="openPage('HowYouCanHelp', this, '#AAEFDF')"><strong>How You Can Help</strong></button>
+<button class="tablink" onclick="openPage('AboutUs', this, '#AAEFDF')"><strong>About Us</strong></button>
+<button class="tablink" onclick="openPage('Citations', this, '#AAEFDF')"><strong>Resources</strong></button>
+
+
+<div id="Home" class="tabcontent" style="display: block;">
+  <h3>Home Page</h3>
+  <p><strong>Endangered Species</strong> are groups of animals in immediate danger of becoming <strong>extinct</strong>, or died out. Animals may become threatened or endangered because of a loss or change in habitat, over-exploitation, predation, competition, disease, disturbance or contamination. In New Jersey, there are many endangered animals that need your help! By learning about these animals and why they have become endangered, you are already taking steps to make a difference. If we work together, maybe we can save these animals!</p>
+<p><h4>Our Mission</h4></p>
+<p> The goal of this website is to teach you about endangered animals in New Jersey. We also want to let you know that it is possible for you to make a difference. It is possible for you to save these animals if you try! You also can prevent future problems, like having more species face endangerment. Share this information with your family and friends. Together, we can save the animals and change the world!</p>
+<p><h4>Game!</h4></p>
+  <p>Click the green flag to start the game then use the arrow keys to guide the sea turtle back to the ocean to save him! Avoid hitting the walls and the dogs! Your goal is to reach the yellow star!</p>
+<iframe src="https://scratch.mit.edu/projects/324412959/embed" class="center" allowtransparency="true" width="1000" height="500" frameborder="0" scrolling="no" allowfullscreen ></iframe>
+</div>
+
+<div id="Animals" class="tabcontent" >
+
+  <h3>Enangered Animals in New Jersey </h3>
+<p> Glide your mouse over the images to discover more about each animal!</p>
+
+  <p><h2> Piping Plover</h2></p>
+   <div class="flip-box">
+     <div class="flip-box-inner">
+       <div class="flip-box-front">
+         <img src="http://www.conservewildlifenj.org/images/artinline_203.jpg" alt="Skyla" style="width:400px;height:300px">
+         <p9>(Lin, Robert)</p9>
+       </div>
+       <div class="flip-box-back">
+   <p3>The piping plover is a little bird that can be found near the seashores. It has a black neck band and a black bar on
+     its forehead. The feathers are light sandy-brown and white, which allow the bird to hide from predators on sandy beaches.
+     The legs are and the beak are orange, and the beak has a black tip. Male plovers have darker colored and wider neck bands.
+     Piping plovers reproduce on Atlantic Coast beaches like Sandy Hook and Cape May. Piping plovers live on coastal beaches and
+     boundary islands. Plovers eat aquatic worms, small shellfish, beetles and larvae.</p3>
+   </div>
+   </div>
+   </div>
+
+   <p><h2> Kemp Ridley Sea Turtle</h2></p>
+   <div class="flip-box">
+     <div class="flip-box-inner">
+       <div class="flip-box-front">
+         <img src="http://www.conservewildlifenj.org/images/artinline_446.jpg" alt="Skyla" style="width:400px;height:300px">
+         <p9>(Patterson, Seth)</p9>
+       </div>
+       <div class="flip-box-back">
+   <p3>The kemp ridley sea turtle is the smallest species of sea turtles. The short, heavy shell looks a little heart-shaped,
+      with high spinal bumps and jagged edges. The turtle has a medium sized triangular head and a curved beak with
+      large surfaces. Kemp ridley turtles are dwell mostly inside the Gulf of Mexico and the U.S. Atlantic coast.
+      They are normally found in shallow waters. They have been seen inside the Barnegat Bay in New Jersey. Young Ridley
+      Turtles will eat small crabs, plants, and snails. Adults mostly, but they also eat mollusks and shellfish.</p3>
+    </div>
+    </div>
+    </div>
+
+
+   <p><h2> Bobcat</h2></p>
+   <div class="flip-box">
+     <div class="flip-box-inner">
+       <div class="flip-box-front">
+   <img src="http://www.conservewildlifenj.org/images/artinline_205.jpg" alt="Skyla" style="width:400px;height:300px">
+   <p9>(Simpson, Wayne)</p9>
+       </div>
+       <div class="flip-box-back">
+   <p3>The bobcat is about two feet tall and can weigh up to 20 pounds.Their fur can either be yellowish brown or
+     reddish brownThey only live in North America, specifically in alpine and mixed forests, swamp regions in and near Florida,
+       and desert in the southwestern United States.
+     They are missing in the really tended areas of the northern mid-states, and were once very plentiful in New Jersey.
+     Bobcats eat rabbits, rats, squirrels, birds, turkeys, and even young deer.</p3>
+   </div>
+   </div>
+   </div>
+
+
+   <p><h2> Northeastern Beach Tiger Beetle </h2></p>
+   <div class="flip-box">
+     <div class="flip-box-inner">
+       <div class="flip-box-front">
+         <img src="http://www.conservewildlifenj.org/images/artinline_780.jpg" alt="Skyla" style="width:400px;height:300px">
+         <p9>(Drummond, Mike)</p9>
+       </div>
+       <div class="flip-box-back">
+     <p3>Northeastern beach tiger beetles are classified due to their brownish-green head
+       and thorax. It has white or light tan forewings, usually with black lines.The North eastern beach tiger beetle has been
+       erased from Rhode Island, Connecticut, and New York. Only one tiny population has survived in New Jersey. They are
+       inside Gateway National Recreation Area. Their diet generally consists of aquatic invertebrates, crabs, and fish.
+       They also capture and eat small amphipods, flies, and spiders.</p3>
+     </div>
+   </div>
+ </div>
+
+     <p><h2>Blue Spotted Salamander</h2></p>
+     <div class="flip-box">
+       <div class="flip-box-inner">
+         <div class="flip-box-front">
+           <img src="https://www.wildlife.state.nh.us/nongame/images/salamanders-bluespot-henk-wallays.jpg" alt="Skyla" style="width:400px;height:300px">
+           <p9>(Patterson, Seth)</p9>
+         </div>
+         <div class="flip-box-back">
+       <p3>These salamanders are between 8 and 14 cm in length. They are thought to eat various arthropods
+          and soft bodied invertebrates such as slugs and earthworms. Their skin is bluish-black, with blue and white flecks
+          on its back, and bluish-white spots on the sides of its body and tail. Blue-spotted salamanders are mostly found in
+          moist and hardwood forests. They are endangered because they are not freeze tolerant, like some other frog species,
+          so they must hibernate somewhere that doesn't freeze.</p3>
+        </div>
+        </div>
+        </div>
+
+       <p><h2> Bronze Copper Butterfly</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://wisconsinbutterflies.org/a/species/1091/giant/bronze-copper.jpg" alt="Skyla" style="width:400px;height:300px">
+           <p9>(Bronze Copper)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The bronze copper visit flowers so they have been seen taking nectar at blackberry and red clovers.
+         They live in habitats with low, wet areas such as marshes, wet meadows, and ponds.
+         The male butterflies are iridescent copper-brown and the females are yellow-orange on their wingspan with black spots.</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Broad Winged Hawk</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://www.allaboutbirds.org/guide/assets/photo/71534361-480px.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Broad-Winged Hawk)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>Broad winged Hawks live in large or mixed forests habitats throughout the eastern United States.
+         These hawks come in small sizes with They mostly eat small mammals, amphibians, and insects.
+         The largest threat to this species is habitat destruction, particularly within its wintering range.</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Nurse Shark</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://oceana.org/sites/default/files/styles/lightbox_full/public/shutterstock_436783789.jpg?itok=VSAmYLrK" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Oceana)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The nurse shark can be many different colors like yellowish tan to dark brown. They are a common inshore bottom
+          habitat shark, found in tropical and subtropical waters. They usually eat other fish like shrimp and squid and
+          use their strong jaws to crush and eat corals and </p4>
+        </div>
+        </div>
+        </div>
+
+       <p><h2> Shortnose Sturgeon</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://cdn2.webdamdb.com/1280_AIN6BGXd66a2.png?1516737866" alt="Skyla" style="width:400px;height:300px">
+             <p9>(NOAA)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The Shortnose Sturgeon is a yellowish brown fish with a short and bluntly rounded snout, wide mouth,
+         and heterocercal tail. They use their barbels to locate their food: eat sludge worms, aquatic insect larvae,
+         plants, snails, shrimp, and crayfish. They are usually around two feet long. They can be found in river mouths,
+         tidal rivers, estuaries, and bays.</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Sperm Whale</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://cosmos-magazine.imgix.net/file/spina/photo/1273/131014_Why-is-it-so_1.jpg?ixlib=rails-1.1.0&h=718&w=1061" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Harris, Martin)</p9>
+               </div>
+ <div class="flip-box-back">
+       <p4>The Sperm whale is a dark brownish gray whale with one blowhole centered at the top of its head. They have
+         distinctive, receding jaw with many large teeth, and a flat tail.They can grow to be up to 69 feet long, and
+         their head often takes up a third of their entire body. They live in every ocean and they eat squid, fish, and sharks.</p4>
+       </div>
+       </div>
+       </div>
+
+
+       <p><h2> Corn Snake</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://www.thesprucepets.com/thmb/tfskEl0nx5QdV_LI7zTxJCv0FYc=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/corn-snake-from-the-lower-florida-keys-530475947-588124bc5f9b58bdb3ec9f93.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(McLeod, Lianne)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The Corn Snake has a color ranging from brown to light orange or red, and are marked with brick red blotches outlined
+         in black. The snake also has black and white rectangular markings that look like corn kernals. They grow to be around
+         2.5 to 4 ft. in length. They live in forests and burrow near water, and usually eat mice. </p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Fin Whale</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://s2r.iucnredlist.org/sis2_images/1855675223.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(The IUCN)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The fin whale is the second largest whale in the world.They have a diet where they only eat meat, usually small fish,
+         squid and krill. They are endangered but not close to extinction with about 100,00 left</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Short Eared Owl</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://cascadesraptorcenter.org/assets/uploads/ShEarOwl_lg.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Greenfield, Tom)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The Short Eared Owl is a species of owl living in fields and grasslands in Elizabeth, New Jersey. Although they
+         are endangered in New Jersey, they are Hawaii’s only native bird eating on mammals. They  There was severe a decline
+         of population due to habitat loss causing this owl to be listed as an endangered species.</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Southern Gray Treefrog</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Hyla_chrysoscelisPCCA20060401-2867B.jpg/220px-Hyla_chrysoscelisPCCA20060401-2867B.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Devin's Frog)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The habitat for the Southern Gray Treefrog species rely on both fresh-water ponds and hardwood forests. They
+         were listed on the endangered list in 1979, due to loss of its required habitat and its limited distribution.
+         Many Gray Treefrogs feast on insects and their larvae and will sometimes even eat some of their species if they
+         are small enough to catch.</p4>
+       </div>
+       </div>
+       </div>
+
+       <p><h2> Indiana Bat</h2></p>
+       <div class="flip-box">
+         <div class="flip-box-inner">
+           <div class="flip-box-front">
+             <img src="https://www.fws.gov/arkansas-es/Species/mammals/indianabat.jpg" alt="Skyla" style="width:400px;height:300px">
+             <p9>(Indiana Bat)</p9>
+           </div>
+           <div class="flip-box-back">
+       <p4>The Indiana Bat hibernates during the winter seasons. Their diet consists of bugs and insects. This species uses
+         echolocation to locate their prey. Indiana Bats are sometimes woken up out of hibernation because people invade their
+         roosting site and purposely kill the bats. </p4>
+       </div>
+       </div>
+       </div>
+
+ </div>
+
+
+<div id="Why" class="tabcontent">
+  <h3>Why Are These Animals Endangered?</h3>
+
+    <p>Many animals in New Jersey, like the ones you have previously learned about, are endangered for many different reasons. The main reasons are the following: habitat loss/changes, over-exploitation, predation, competition, disease, and disturbance/contamination. It is important to learn about species’ problems causing endangerment and extinction so that we are able to stop the current problems and prevent future problems.</p>
+
+  <p><h4>Habitat Loss/Changes </h4></p>
+  <p>Habitat changes or habitat losses are a major threat to many species of animals. This is when the places where animals live, such as forests or plains, are destroyed or impacted by humans. Humans often do this so that they can build or farm on the land. To fix this problem, protected areas are established to save species and their natural habitats. However, habitat loss continues to be a major problem as humans continue to expand their needs. </p>
+    <img src="http://www.conservewildlifenj.org/images/artinline_161.jpg" alt="Habitat Loss" style="width:400px;height:300px" class="center">
+    <p9 class="center">(Sparkman, Kevin)</p9>
+  <p><h4>Over-exploitation</h4></p>
+  <p>Over-exploitation is the overuse of wild animal and plant species by people. An example of over-exploitation would be overfishing or overhunting. Humans kill animals for food, other products, and for sport. It becomes over-exploitation when humans kill too many animals of a species, which often causes endangerment.
+ </p>
+ <img src="http://2.bp.blogspot.com/-N2Y4d_6WYF0/UpZr-MmxpxI/AAAAAAAABw4/lRD_wURws8U/s320/fish5-uae.gova.jpg" alt="Over-exploitation" style="width:400px;height:300px" class="center">
+<p9 class="center">(Gonzalo)</p9>
+  <p><h4>Predation </h4></p>
+  <p>Predation is the relationship in which the predator, like the lion, eats the prey, the zebra. Predation causes the population of both predators and prey to balance. Therefore, the two depend on each other. If there is less prey population for the predator, then the predator population decreases as well. The balance of predation in nature affects populations. Human involvement affects populations also, so if one population is affected, then its predator or prey population is affected as well. </p>
+  <img src="https://www.nationalgeographic.com/content/dam/news/2016/08/02/predators-phenomena/01predators-phenomena.jpg" alt="Predation" style="width:400px;height:300px" class="center">
+<p9 class="center">(Yong, Ed)</p9>
+  <p><h4>Competition </h4></p>
+  <p> Competition is the interaction between animals when they require the same resource, such as food. The two types of competition are interspecific and intraspecific. Interspecific is competition between animals within a species. Intraspecific is competition between animals of different species. Both types of competition affect populations of species, since animals fight for their resources. </p>
+<img src="https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Ad90a9e3ecd915f62adb5f7b8fba34393e5a7bb804c87ef87be16b862%2BIMAGE_TINY%2BIMAGE_TINY.1" alt="Competition" style="width:400px;height:300px" class="center">
+<p9 class="center">(Wilkin, Douglas)</p9>
+  <p><h4>Disease</h4></p>
+  <p> Disease and illnesses often threaten wildlife populations greatly. Animals spread different dangerous diseases among animals in their species as well as among animals in different species. This may result in excessive animal deaths leading to endangerment and extinction. </p>
+<img src="https://odh.ohio.gov/wps/wcm/connect/gov/59f13305-da3f-41a9-b8b5-ba7aa586128e/for-disease.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_M1HGGIK0N0JO00QO9DDDDM3000-59f13305-da3f-41a9-b8b5-ba7aa586128e-mrF.vGI" alt="Disease" style="width:400px;height:300px" class="center">
+<p9 class="center">(Ohio Department of Health)</p9>
+  <p><h4>Contamination</h4></p>
+  <p>Contamination is the presence of undesirable substances in the natural environment. Contaminants often cause pollution in many forms. This is caused by human action such as litter, pesticides and fertilizer, burning of fossil fuels, and other forms of impurities. The effects are drastic, including garbage patches, algal blooms, acid rain, and water pollution. This not only affects the animals, producing endangered and extinct species, but it also impacts humans, causing disease and environmental destruction.</p>
+  <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fscottsnowden%2Ffiles%2F2019%2F05%2FGreatPacificGarbagePatch.jpg" alt="Contamination" style="width:400px;height:300px" class="center" >
+<p9 class="center">(Snowden, Scott)</p9>
+<h4>Quiz Game</h4>
+<p>Click the green flag to start the quiz game. Type in your answers and see how much you know!</p>
+<iframe src="https://scratch.mit.edu/projects/324684251/embed"  class="center" allowtransparency="true" width="800" height="500" frameborder="0" scrolling="no" allowfullscreen></iframe>
+
+</div>
+
+<div id="HowYouCanHelp" class="tabcontent">
+  <h3>What Can You Do To Help Them?</h3>
+  <h2>There are many ways you can help protect these animals
+    and bring them off of the endangered list. </h2><h2 >Here's how you can help save the world!</h2>
+
+  <img src="https://oceanservice.noaa.gov/ocean/earthday-infographic-large.jpg" alt="Save the Planet" style="width:800px;height:500px" class="center">
+  <p9 class="center">(NOAA)</p9>
+  <ul>
+      <p2><li>Educate your family and friends about endangerment and extinction in your area.</li>
+      <li>  Try to not buy or use plastic products, as they tend to find their way into the ocean, harming our aquatic wildlife.</li>
+      <li>Do your part to share the beach with certain animals, like the
+  Piping Plover, because they tend to breed on certain parts of the beach. If you
+  take your pets to the beach, make sure to keep a close eye on them.
+    Dogs can be
+ a threat to certain endangered beach animals, like the piping plover and the Ridley
+  Sea turtle.</li>
+      <li>When driving on the roads, drive carefully and be alert for any wild Animals
+ that may be on the street, especially at night. </li>
+      <li> Do not purchase any clothes that are
+  made from animal fur.</li>
+      <li> If you see trash on the ground, pick it up and throw it in the
+ trash or recycling bins.</li>
+      <li>Volunteer at local organizations that help clean up the
+environment and/or help the animals.</li>
+</p2></ul>
+<h4>Change Is Possible...</h4>
+<p><i>The Bald Eagle's Success Story</i></p>
+  <img src="https://www.nydailynews.com/resizer/qZrtPLaSHf1jD7A0CBn6AHYCBUo=/1200x0/top/arc-anglerfish-arc2-prod-tronc.s3.amazonaws.com/public/4PDJV2EMWZH5TBWQNMUDWCTGPA.jpg" alt="Bald Eagle" style="width:400px;height:300px" class="center">
+  <p9 class="center">(Sommerfeldt, Chris)</p9>
+<p>The bald eagle is an iconic symbol for the United States. In the 1960's and 1970's, however, the bald eagle population became a concern due to the counry's excessive use of a synthetic insecticide called DDT. The bald eagle population grew after DDT was banned and the species was protected under the Endangered Species Act. In 2007, the U.S. Fish and Wildlife Service removed the Bald Eagle from the federal endangered species list.</p>
+
+
+  <h4>Want to contribute or help? Here are some links to get involved or donate...</h4>
+<p>
+Conservewildlifenj
+</p>
+<p>
+<a href="http://www.conservewildlifenj.org/getinvolved/donate/">http://www.conservewildlifenj.org/getinvolved/donate/</a>
+</p>
+<p>
+Wildlife Center Friends:Mercer County Wildlife Center
+</p>
+<p>
+<a href="http://www.wildlifecenterfriends.org/donate">http://www.wildlifecenterfriends.org/donate</a>
+</p>
+<p>
+Alliance for a Living Ocean
+</p>
+<p>
+<a href="http://www.livingocean.org/donate/">http://www.livingocean.org/donate/</a>
+</p>
+</div>
+
+
+
+
+<div id="AboutUs" class="tabcontent">
+  <h3>About Us</h3>
+  <p> Hannah, Rocio, Alexa, and Skyla worked collectiely and effectively to create a website that
+    will help inform children and even adults about the affect our daily habits have on many species in
+    New Jersey. We created this website to educate kids and their families about endangered animals in our state. </p>
+
+    <div class="column">
+    <div class="card">
+      <div class="class">
+        <h11 class = "hannah"> <strong>Hannah Cunningham </strong></h11>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner" >
+      <div class="flip-card-front" >
+        <img src="hannahpic.jpg" alt="Hannah" style="width:300px;height:300px" class="rotateimg90">
+      </div>
+        <div class="flip-card-back">
+        <p></p><p></p><p></p><p14>I'm Hannah Cunningham and I am 16 years old. I live in East Orange, NJ, but go to school at Notre Dame
+        School in NYC. Some of my hobbies outside of coding are, running track, watching movies, and reading. </p14>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="class">
+        <h12 class = "rocio"> <strong>Rocio Rodriguez</strong></h12>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="rociopic.jpg" alt="Rocio" style="width:300px;height:300px">
+      </div>
+      <div class="flip-card-back">
+        <h2></h2>
+        <p14>My name is Rocio Rodriguez. I go to Infinity Institute located in Jersey City, New Jersey
+          and I am 16 years old. Some of my interests and hobbies include experimenting with makeup,
+          listening to music, dancing tango, bachata, merengue, salsa, and I also play volleyball on my free time.</p14>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="class">
+        <h13 class="padding"> <strong>Alexa Kulawiak</strong> </h13>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="alexa.jpeg"alt="Alexa" style="width:300px;height:300px" class="rotateimg90">
+      </div>
+      <div class="flip-card-back">
+        <p> </p><p14>My name is Alexa Kulawiak. I am a seventeen year old from Middletown, New Jersey. I am a senior at
+          the Marine Academy of Science and Technology. My hobbies include playing piano and guitar as well as
+          running track and playing soccer. </p14>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="class">
+        <h14><strong> Skyla Negron</strong> </h14>
+      </div>
+    </div>
+  </div>
+  <div class="flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <img src="skylapic.jpg" alt="Skyla" style="width:300px;height:300px">
+      </div>
+      <div class="flip-card-back">
+        <h2></h2>
+        <p14>I’m a 17 year old girl who is a senior in South Plainfield High School. I currently participate and
+          attend the Girls Who Code Summer Immersion Program in Jersey City. I like hanging out with my friends
+          and family, and I like playing with my dog, Milo. I also like to travel, and I’m going to Japan in November.</p14>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div id="Citations" class="tabcontent">
+  <h3>Resources</h3>
+  <p> <h2>Here are some resources we used for this site's information</h2></p>
+
+  <ul style="list-style-type:circle;">
+
+      <li><p9>“Bald Eagles Are the Endangered Species Act's Greatest Success Story.” American Bird Conservancy, 24 July 2019,<a href="abcbirds.org/bald-eagle-the-ultimate-endangered-species-act-success-story/">abcbirds.org/bald-eagle-the-ultimate-endangered-species-act-success-story/</a>.</p9></li>
+   <li> <p9>“Broad-Winged Hawk Identification, All About Birds, Cornell Lab of Ornithology.” , All About Birds, Cornell Lab of Ornithology, <a href="www.allaboutbirds.org/guide/Broad-winged_Hawk/id".>www.allaboutbirds.org/guide/Broad-winged_Hawk/id </a></p9></li>
+    <p9>“Bronze Copper.” Bronze Copper - Wisconsinbutterflies.org, <a href="wisconsinbutterflies.org/butterfly/species/29-bronze-copper">wisconsinbutterflies.org/butterfly/species/29-bronze-copper.</a></p9></li>
+  </p9></li>
+    <li><p9>Callahan, Nicole B. “Overexploitation.” The Environmental Literacy Council, <a href= "enviroliteracy.org/ecosystems/drivers-of-biodiversity-loss/overexploitation/."> enviroliteracy.org/ecosystems/drivers-of-biodiversity-loss/overexploitation/ </a></p9>
+  </li>
+   <li> <p9>Cronin, J.P., and Walter P Carson. “Competition.” Biology Reference, <a href= "www.biologyreference.com/Ce-Co/Competition.html."> www.biologyreference.com/Ce-Co/Competition.html. </a></p9>
+  </p9></li>
+    <li><p9>Dasgupta, Shreya. “Earth - Ten Shocking Animal Diseases That May Threaten Species.” BBC, BBC, 27 Mar. 2015, <a href= "www.bbc.com/earth/story/20150327-ten-scary-diseases-of-animals">www.bbc.com/earth/story/20150327-ten-scary-diseases-of-animals.</a>
+  </p9></li>
+   <li> <p9>“Devin's Frog Blog.” Devins Frog Blog, <a href="devingunther.com/frogs/2015/11/11/northern-gray-tree-frog-and-the-southern-gray-tree-frog/."></a></p9></li>
+    <li><p9> Greenfield, Tom. “Short-Eared Owl.” Short-Eared Owl | CascadesRaptorCenter.org, <a href="cascadesraptorcenter.org/resident-birds/short-eared-owl/">cascadesraptorcenter.org/resident-birds/short-eared-owl/</a>
+  </p9></li>
+   <li> <p9>“Disease.” Ohio Department of Health, <a href="odh.ohio.gov/wps/portal/gov/odh/home/disease">odh.ohio.gov/wps/portal/gov/odh/home/disease.</a>
+  </p9></li>
+    <li><p9>Drummond, Mike. "New Jersey Endangered and Threatened Species Field Guide." Conserve Wildlife Foundation of New Jersey. N.p., n.d. Web. 19 Aug. 2019, <a href="http://www.conservewildlifenj.org/species/fieldguide/search/all/">http://www.conservewildlifenj.org/species/fieldguide/search/all/</a>
+  </p9></li>
+    <li><p9>Gonzalo. “Protecting Ecosystems: Over-Exploitation.” Science Blog, 27 Nov. 2013,<a href="scienceblogyear4.blogspot.com/2013/11/protecting-ecosystems-overexploitation.html">scienceblogyear4.blogspot.com/2013/11/protecting-ecosystems-overexploitation.html.</a>
+  </p9></li>
+  <li><p9>Harris, Martin. “Why the Sperm Whale Has a Huge Head.” Cosmos, 13 Oct. 2014, <a href="cosmosmagazine.com/biology/why-sperm-whale-has-huge-head">cosmosmagazine.com/biology/why-sperm-whale-has-huge-head. </a>
+  </p9></li>
+  <li><p9>“Impact of Habitat Loss on Species.” WWF, <a href="wwf.panda.org/our_work/wildlife/problems/habitat_loss_degradation/" >wwf.panda.org/our_work/wildlife/problems/habitat_loss_degradation/</a>.
+  </p9></li>
+  <li> <p9>“Indiana Bat.” Arkansas Field Office , 17 Oct. 2018, <a href="www.fws.gov/arkansas-es/Species/mammals/IndianaBat.html./">www.fws.gov/arkansas-es/Species/mammals/IndianaBat.html.</a>
+  </p9></li>
+    <li><p9>Lin, Robert. "New Jersey Endangered and Threatened Species Field Guide." Conserve Wildlife Foundation of New Jersey. N.p., n.d. Web. 19 Aug. 2019, <a href="http://www.conservewildlifenj.org/species/fieldguide/search/all/">http://www.conservewildlifenj.org/species/fieldguide/search/all/</a>
+  </p9></li>
+    <li><p9>McLeod, Lianne. “Find out If a Pet Corn Snake Is Right for You.” The Spruce Pets, The Spruce Pets, 23 June 2019, www.thesprucepets.com/corn-snakes-1236771. <a href=" www.thesprucepets.com/corn-snakes-1236771."> www.thesprucepets.com/corn-snakes-1236771.</a>
+  </p9></li>
+    <li><p9>NJ Division of Fish and Wildlife. “New Jersey's Endangered and Threatened Wildlife .” NJDEP Division of Fish & Wildlife, 20 Mar. 2018, www.nj.gov/dep/fgw/tandespp.htm. <a href="www.nj.gov/dep/fgw/tandespp.htm.">www.nj.gov/dep/fgw/tandespp.htm.</a>
+  </p9></li>
+    <p9>Noaa. “Shortnose Sturgeon.” NOAA Fisheries, <a href="www.fisheries.noaa.gov/species/shortnose-sturgeon".>www.fisheries.noaa.gov/species/shortnose-sturgeon</a>
+  </p9></li>
+    <li><p9>“Nurse Shark.” Oceana, <a href="oceana.org/marine-life/sharks-rays/nurse-shark".>oceana.org/marine-life/sharks-rays/nurse-shark</a>
+  </p9></li>
+    <li><p9>Patterson, Seth. "New Jersey Endangered and Threatened Species Field Guide." Conserve Wildlife Foundation of New Jersey. N.p., n.d. Web. 19 Aug. 2019, <a href="http://www.conservewildlifenj.org/species/fieldguide/search/all/">www.conservewildlifenj.org/species/fieldguide/search/all/</a>
+  </p9></li>
+    <li><p9>“Pollution.” WWF, World Wildlife Fund, <a href="www.worldwildlife.org/threats/pollution".> www.worldwildlife.org/threats/pollution</a>
+  </p9></li>
+    <li><p9>Simpson, Wayne. "New Jersey Endangered and Threatened Species Field Guide." Conserve Wildlife Foundation of New Jersey. N.p., n.d. Web. 19 Aug. 2019, <a href="http://www.conservewildlifenj.org/species/fieldguide/search/all/">http://www.conservewildlifenj.org/species/fieldguide/search/all/</a>
+  </p9></li>
+    <li><p9>Snowden, Scott. “300-Mile Swim Through The Great Pacific Garbage Patch Will Collect Data On Plastic Pollution.” Forbes, Forbes Magazine, 31 May 2019, <a href="www.forbes.com/sites/scottsnowden/2019/05/30/300-mile-swim-through-the-great-pacific-garbage-patch-will-collect-data-on-plastic-pollution/#34768482489f".>www.forbes.com/sites/scottsnowden/2019/05/30/300-mile-swim-through-the-great-pacific-garbage-patch-will-collect-data-on-plastic-pollution/#34768482489f</a>
+  </p9></li>
+    <li><p9>Sommerfeldt, Chris. “Trump Administration Drastically Weakens Landmark Law Protecting Endangered Species like the Bald Eagle.” Nydailynews.com, New York Daily News, 12 Aug. 2019, <a href="www.nydailynews.com/news/politics/ny-trump-weakens-landmark-law-species-bald-eagle-20190812-gyxk47o4enbz5kdljcvueihx4q-story.html". > www.nydailynews.com/news/politics/ny-trump-weakens-landmark-law-species-bald-eagle-20190812-gyxk47o4enbz5kdljcvueihx4q-story.html</a>
+  </p9></li>
+    <li><p9>Sparkman, Kevin. “Threats to Wildlife.” Conserve Wildlife Foundation of New Jersey, <a href="www.conservewildlifenj.org/species/threats/">www.conservewildlifenj.org/species/threats/</a>.
+  </p9></li>
+    <li><p9>“The IUCN Red List of Threatened Species.” IUCN Red List of Threatened Species,<a href="www.iucnredlist.org/species/2478/50349982">www.iucnredlist.org/species/2478/50349982</a>.
+  </p9></li>
+   <li> <p9>U.S. Department of Commerce, and National Oceanic and Atmospheric Administration. “What Can I Do to Protect Coral Reefs?” NOAA's National Ocean Service, 10 Aug. 2009, <a href="oceanservice.noaa.gov/ocean/earthday.html">oceanservice.noaa.gov/ocean/earthday.html</a>.
+  </p9></li>
+   <li> <p9>Wilkin, Douglas, and Jean Brainard. “Animal Competition.” CK, CK-12 Foundation, 17 June 2017, <a href="www.ck12.org/biology/Animal-Competition/lesson/Animal-Competition-Advanced-BIO-ADV/"> www.ck12.org/biology/Animal-Competition/lesson/Animal-Competition-Advanced-BIO-ADV/</a>.
+  </p9></li>
+    <li><p9>Yong, Ed. “The World's Top Predators Are Dining From Dwindling Menus.” National Geographic, 3 Aug. 2016, <a href= "www.nationalgeographic.com/news/2016/08/world-top-predators-endangered-prey/".>www.nationalgeographic.com/news/2016/08/world-top-predators-endangered-prey/</a>
+  </p9></li>
+  </ul>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
